@@ -1,0 +1,38 @@
+doctype html 
+html(lang = "en")
+    head 
+        meta(charset="utf-8")
+        title The Magical Report 
+        link(rel="stylesheet", href="/resources/css/main.css")
+        link(rel="stylesheet", href="/resources/css/main.dark.css")
+        script(src="/resources/js/main.js" defer)
+        script(src="/resources/js/sale.banner.js" defer)
+
+    body#body 
+    
+        include imports/navBar.pug
+
+        p#sales_banner
+        h1#mainpageTitle The Magical Report 
+        h2#catchPhrase sprinkling pixie dust in your feed 
+        img#stitchBoba(src="/resources/images/main.jpg" alt="Boba Stitch" width="500" height="500")
+        div#Description 
+            p 
+                |We are here to provide the 
+                em latest and greatest
+                |news updates regarding evrything to do with the Walt Disney Company. With our 
+                strong secret inside sources 
+                |we'll give you exclusive updates and rumors across the categories listed below.
+
+            ol 
+                li Movies 
+                li Tv Shows 
+                li The Parks 
+                li Cruises 
+            
+            p 
+                |We have been covering the house of mouse for the past 30 years. We have seen them evolve and broke some of the biggest news 
+                |including Disney plus and the world of pandora land in animal kingdom. Make sure to spread the word to friends and family 
+                |so they too can stay in the loop on all Disney news
+            
+        

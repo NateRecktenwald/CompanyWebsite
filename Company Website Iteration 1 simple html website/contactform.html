@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="/mainpage">The Magical Report</a>
+        <br>
+        <a href="/contactform">Mailing List</a>
+        <br>
+        <a href="/testimonies">Reviews</a>
+    </nav>
+
+    <h1>Sign up for our mailing list below:</h1>
+
+    <form action="/contact" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Ex. Woody" REQUIRED>
+    </form>
+
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="belle@gmail.com" REQUIRED>
+    </form>
+
+    <form>
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday">
+    </form>
+
+    <form>
+        <label for="news">Preffered News:</label> 
+        <select name="news" id="news"> 
+            <option value="all">All News</option>
+            <option value="parks">Disney Parks</option> 
+            <option value="movies">Movies</option> 
+            <option value="shows">Tv Shows</option> 
+            <option value="cruise">Disney Cruises</option>  
+        </select>
+    </form>
+
+
+    <form>
+        <label for="rumors">Would you like to hear about rumors:</label>
+        <input type="checkbox" id="rumors" name="rumors">
+    </form>
+
+    <form>
+        <label for="submit">Join:</label>
+        <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+    
+
+</body>
+
+</html>

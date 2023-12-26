@@ -1,0 +1,51 @@
+doctype html 
+html(lang = "en")
+    head 
+        meta(charset="utf-8")
+        title Contact
+        link(rel="stylesheet", href="/resources/css/main.css")
+        link(rel="stylesheet", href="/resources/css/main.dark.css")
+        script(src="/resources/js/main.js" defer)
+        script(src="/resources/js/contact.js" defer)
+    
+    body#body 
+    
+        include imports/navBar.pug
+
+        h1 Sign up for our mailing list below: 
+
+        #contact_form 
+            form(action="/contact" method="post")
+                .form_element 
+                    label(for="name") Name: 
+                    input#name(type="text" name="name" placeholder="Ex. Woody" value="" REQUIRED)
+                
+                .form_element
+                    label(for="email") Email:                    
+                    input#email(type="email" name="email" placeholder="belle@gmail.com" value="" REQUIRED)
+                
+                .form_element 
+                    label(for="birthday") Brithday 
+                    input#birthday(type="date" name="birthday" value="")
+                
+                .form_element 
+                    label(for="news") Preffered News: 
+                    select#news(name="news") 
+                        option(value="all") All News 
+                        option(value="parks") Disney Parks 
+                        option(value="movies") Movies 
+                        option(value="shows") Tv Shows 
+                        option(value="cruise") Disney Cruises 
+                
+                .form_element 
+                    label(for="rumors") Would you like to hear about rumors: 
+                    input#rumors(type="checkbox" name="rumors")
+
+                .form_element 
+                    label(for="submit") Join: 
+                    input#submit(type="submit" name="submit")
+                
+                p#calculation
+
+
+

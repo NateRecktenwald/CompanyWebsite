@@ -1,0 +1,94 @@
+/* all pages */ 
+
+body.dark {
+    background-color: rgb(0, 9, 59);
+}
+
+body.dark nav {
+    background-color: rgb(0, 9, 59);
+}
+
+body.dark nav a {
+    background-color:  rgb(125, 160, 230);
+    color: black;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+body.dark nav button {
+    background-color:  rgb(125, 160, 230);
+    color: black;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+
+/* main page */
+
+body.dark div#Description {
+    background-color: rgb(125, 160, 230);
+    color: black;
+}
+
+body.dark em {
+    color: rgb(65, 79, 11);
+}
+
+body.dark strong {
+    color: rgb(88, 7, 7);
+}
+
+
+/* contact form page */
+
+body.dark div#contact_form {
+    background-color: rgb(125, 160, 230);
+    color: black;
+}
+
+/* testimonials page */
+
+body.dark iframe {
+    border: 2px solid white;
+    background-color: rgb(125, 160, 230);
+}
+
+body.dark div.review {
+    background-color: rgb(125, 160, 230);
+}
+
+body.dark div.review p.review-body{
+    color: rgb(0, 0, 0);
+}
+
+body.dark div.review p.reviewer-name{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 253, 253);
+}
+
+
+/* contact log */
+
+body.dark table {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+body.dark tr {
+    background-color: rgb(125, 160, 230);
+}
+
+body.dark tr.even {
+    background-color: rgb(76, 121, 211);
+}
+
+body.dark th {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+body.dark td {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+body.dark td a {
+    color: rgb(97, 255, 150)
+}

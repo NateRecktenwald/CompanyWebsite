@@ -1,0 +1,58 @@
+mixin table_row(contact, index)
+    each item in contact 
+        td #{item}
+    td  
+        button(type="button" name="delete", id=index) remove
+
+doctype html
+html(lang = "en")
+    head 
+        meta(charset="utf-8")
+        title Testimonies
+        link(rel="stylesheet", href="/resources/css/main.css")
+        link(rel="stylesheet", href="/resources/css/main.dark.css")
+        script(src="/resources/js/main.js" defer)
+        script(src="/resources/js/table.js" defer)
+        script(src="/resources/js/sale.admin.js" defer)
+    
+    body#body 
+
+        include imports/navBar.pug
+    
+        #sale_block 
+            #set_sale 
+                p#change_sale Set Sale 
+                form
+                    #sale_input 
+                        label(for="sale_text") Sale Text 
+                        input#sale_text(type="text" name="sale_text" value="")
+                    
+                    #start_sale 
+                        button#set(type="button" name="set") Start Sale 
+
+                    #end_sale 
+                        button#end(type="button" name="end") End Sale
+        
+        h1 Contact List 
+
+        table#log
+            tbody#table_body
+                tr 
+                    th Name 
+                    th Email 
+                    th Birthday 
+                    th News 
+                    th Rumors 
+                    th Row Deletion 
+                - var i = 0
+                each contact, index in contacts
+                    if (i % 2 == 0)
+                        tr.even(id=`index${index}`)
+                            +table_row(contact, index)
+                    else
+                        tr(id=`index${index}`)
+                            +table_row(contact, index)
+                    - i++
+            
+            
+    

@@ -1,0 +1,6 @@
+- I lost points on Assignment 2 specifically parsing parameters 
+    link to gradescope https://www.gradescope.com/courses/603664/assignments/3494155/submissions/201140574#Question_4-rubric
+
+- I lost points for parsing the parameters from contact from and it was about 6 points lost
+
+- I have provided a redemption.py with the fixed parsing logic

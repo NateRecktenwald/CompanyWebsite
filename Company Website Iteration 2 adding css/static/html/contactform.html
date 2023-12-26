@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body id="contact">
+
+    <nav>
+        <a href="/mainpage">The Magical Report</a>
+        <a href="/contactform">Mailing List</a>
+        <a href="/testimonies">Reviews</a>
+        <a href="/admin/contactlog">Contact Log</a>
+    </nav>
+
+    <h1>Sign up for our mailing list below:</h1>
+
+    <div id="contact_form">
+        <form action="/contacts" method="get">
+            <div class="form_element">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Ex. Woody" value="" REQUIRED>
+            </div>
+
+            <div class="form_element">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="belle@gmail.com" value="" REQUIRED>
+            </div>
+
+            <div class="form_element">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday" value="">
+            </div>
+
+            <div class="form_element">
+                <label for="news">Preffered News:</label> 
+                <select name="news" id="news"> 
+                    <option value="all">All News</option>
+                    <option value="parks">Disney Parks</option> 
+                    <option value="movies">Movies</option> 
+                    <option value="shows">Tv Shows</option> 
+                    <option value="cruise">Disney Cruises</option>  
+                </select>
+            </div>
+
+            <div class="form_element">
+                <label for="rumors">Would you like to hear about rumors:</label>
+                <input type="checkbox" id="rumors" name="rumors">
+            </div>
+
+            <div class="form_element">
+                <label for="submit">Join:</label>
+                <input type="submit" id="submit" name="submit">
+            </div>
+        </form>
+
+    </div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+mixin reviews(name, message)
+    .review 
+        p.review-body #{message} 
+        p.reviewer-name #{name}
+
+doctype html 
+html(lang = "en")
+    head 
+        meta(charset="utf-8")
+        title Testimonies
+        link(rel="stylesheet", href="/resources/css/main.css")
+        link(rel="stylesheet", href="/resources/css/main.dark.css")
+        script(src="/resources/js/main.js" defer)
+    
+    body#body 
+
+        include imports/navBar.pug
+        
+        h1 User Reviews 
+        h3 Check out this video to hear what our users think about us!
+        #video 
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/DDSGgKVgfkw?si=Jam2tbpiayQ_Rk1Y?rel=0&autoplay=0&mute=0")
+        
+        each review in reviews 
+            +reviews(review.name, review.message)

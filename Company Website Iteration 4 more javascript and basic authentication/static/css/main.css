@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+/* Every Page */
+body {
+    display: flex;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 50em;
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    background-color: rgb(26, 82, 165);
+    overflow-x: hidden;
+    font-family: Arial;
+}
+
+nav {
+    height: 8vh;
+    width: 100vw;
+    border: 0;
+    padding: 5px;
+    margin: 0;
+    background-color: rgb(11, 23, 113);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+nav a{
+    border: 1px solid black;
+    font-size: 1em;
+    font-family: Arial;
+    border-radius: 15px;
+    margin: 1em;
+    padding: 0.7em;
+    background-color:  rgb(26, 82, 165);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+nav button{
+    border: 1px solid black;
+    font-size: 1em;
+    font-family: Arial;
+    border-radius: 15px;
+    margin: 1em;
+    padding: 0.7em;
+    background-color:  rgb(26, 82, 165);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+}
+
+h1 {
+    height: 1em;
+    width: 100em;
+    text-align: center;
+    line-height: 125%;
+    flex-grow: 0;
+    margin: 0.2em;
+    font-family: 'Tangerine', cursive;
+    font-size: 8em;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+h2 {
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    line-height: 150%;
+    flex-grow: 0;
+    margin: 1em;
+    color: white;
+    font-size: 2em;
+    font-family: Arial;
+}
+
+h3 {
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    line-height: 200%;
+    flex-grow: 0;
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    font-family: Arial;
+}
+
+/* Main Page */
+
+p#sales_banner {
+    color: rgb(0, 0, 0);
+    background-color: rgb(177, 168, 228);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    visibility: hidden;
+}
+
+em {
+    color: rgb(117, 225, 255);
+}
+
+strong {
+    color:rgb(255, 234, 0)
+}
+
+img#stitchBoba {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 75%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+div#Description {
+    background-color: rgb(11, 23, 113);
+    color: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 10px;
+    border: 2px solid rgb(0, 8, 65);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-family: Arial;
+}
+
+/* Testimonies */
+
+div#video {
+    width: 100em;
+    margin: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+iframe {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(11, 23, 113);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+div.review {
+    flex-grow: 0;
+    background-color: rgb(11, 23, 113);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 35em;
+    height: 8em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+div.review p.review-body{
+    width: 30em;
+    height: 4.5em;
+    color: white;
+    text-align: left;
+    font-style: italic;
+}
+
+div.review p.reviewer-name{
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    text-align: right;
+}
+
+/* contact form page */
+
+div#contact_form {
+    width: 20em;
+    height: 12em;
+    margin-top: 3em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1em;
+    background-color: rgb(11, 23, 113);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+div.form_element {
+    width: 20em;
+    height: 1em;
+    margin: 0.5em;
+}
+
+/* contact log table */
+
+div#sale_block {
+    width: 100vw;
+    height: 14em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div#set_sale {
+    line-height: 40%;
+    width: 25em;
+    height: 10em;
+    background-color: rgb(177, 168, 228);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+p#change_sale {
+    margin: 1em;
+    text-align: center;
+    font-size: 2em;
+}
+
+div#set_sale form {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+div#sale_input {
+    margin: 0.5em;
+}
+
+div#start_sale {
+    margin: 0.5em;
+}
+
+div#end_sale {
+    margin: 0.5em;
+}
+
+table {
+    background-color: black;
+    width: 70em;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    font-family: Arial;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+tbody {
+    margin: 2em;
+}
+
+tr {
+    background-color: rgb(11, 23, 113);
+    width: 100em;
+    height: 2em;
+    text-align: center;
+}
+
+tr.even {
+    background-color: rgb(45, 66, 184);
+}
+
+th {
+    border: 2px solid black;
+    font-size: 2em;
+}
+
+td {
+    border: 2px solid black;
+    font-size: 1em;
+}
+
+
+td a {
+    color: rgb(170, 237, 255)
+}
+
+td button {
+    height: 2em;
+    width: 4em;
+    font-size: 1.5em;
+}
